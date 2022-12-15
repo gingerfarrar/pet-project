@@ -15,7 +15,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,12 +27,149 @@
       crossorigin="anonymous"
     ></script>
     <title>Pets</title>
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+      main {
+        text-align: center;
+      }
+      .background-box {
+        border: 1px solid #89cff0;
+      }
+
+      .navbar {
+        background-color: #89cff0;
+      }
+      .nav-link {
+        color: white;
+      }
+      .image {
+        max-width: 600px;
+      }
+      .card {
+        margin: 15px;
+      }
+      .button-52 {
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        padding: 13px 20px 13px;
+        outline: 0;
+        border: 1px solid black;
+        cursor: pointer;
+        position: relative;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        text-decoration: none;
+      }
+
+      .button-52:after {
+        content: "";
+
+        background-color: #89cff0;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+      }
+
+      .button-52:hover:after {
+        top: 0px;
+        left: 0px;
+      }
+
+      @media (min-width: 768px) {
+        .button-52 {
+          padding: 13px 50px 13px;
+        }
+      }
+      .CallUs {
+        margin: 10px;
+        color: grey;
+      }
+      #services {
+        margin: 50px;
+      }
+      .service-icon {
+        font-size: 50px;
+        color: #89cff0;
+      }
+      .button-55 {
+        align-self: center;
+        background-color: #fff;
+        background-image: none;
+        background-position: 0 90%;
+        background-repeat: repeat no-repeat;
+        background-size: 4px 3px;
+        border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+        border-style: solid;
+        border-color: #89cff0;
+        border-width: 2px;
+        box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+        box-sizing: border-box;
+        color: #41403e;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Neucha, sans-serif;
+        font-size: 1rem;
+        line-height: 23px;
+        outline: none;
+        padding: 0.75rem;
+        text-decoration: none;
+        transition: all 235ms ease-in-out;
+        border-bottom-left-radius: 15px 255px;
+        border-bottom-right-radius: 225px 15px;
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-55:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+        transform: translate3d(0, 2px, 0);
+      }
+
+      .button-55:focus {
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+      }
+
+      .contact-box {
+        background: #89cff0;
+        padding: 30px 120px;
+        margin: 40px 0;
+        border-radius: 10px;
+      }
+      .contact {
+        margin-top: 50px;
+      }
+      .social-link {
+        font-size: 30px;
+        color: #89cff0;
+      }
+    </style>
   </head>
-  <body background="background.png">
+  <body
+    background="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/867/original/background.png?1671076715"
+  >
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="logo.png" alt="Bootstrap" width="50" height="40" />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/868/original/logo.png?1671076728"
+            alt="Bootstrap"
+            width="50"
+            height="40"
+          />
         </a>
 
         <button
@@ -70,7 +207,10 @@
       </div>
     </nav>
     <main>
-      <img src="petlove.png" alt="" />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/869/original/petlove.png?1671076740"
+        alt=""
+      />
 
       <div class="card">
         <div class="card-body">
@@ -88,7 +228,11 @@
             <h2>Services</h2>
           </div>
         </div>
-        <img src="Petmed.png" alt="" class="image" />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/870/original/Petmed.png?1671076747"
+          alt=""
+          class="image"
+        />
 
         <div class="container">
           <div class="row service-icon">
